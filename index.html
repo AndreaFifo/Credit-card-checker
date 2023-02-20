@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/index.css">
+        <title>Credit card</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="cards">
+                <div class="cards-wrapper">
+                    <div class="front-card">
+                        <img src="./images/card-logo.svg" alt="logo" class="logo">
+    
+                        <div class="row">
+                            <div class="number">
+                                <p class="quartet">0000</p>
+                                <p class="quartet">0000</p>
+                                <p class="quartet">0000</p>
+                                <p class="quartet">0000</p>
+                            </div>
+        
+                            <div class="name-date">
+                                <p id="card_name">Jane Applessed</p>
+                                <div class="date">
+                                    <p class="month" id="card_month">00</p>
+                                    /
+                                    <p class="year" id="card_year">00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="back-card">
+                        <p class="cvc" id="card_cvc">
+                            000
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-form">
+                <form action="">
+                    <div class="row">
+                        <label for="cardholder_name">carholder name</label>
+                        <input type="text" name="carholder name" id="cardholder_name" placeholder="e.g. Jane Applessed">
+                    </div>
+                    <div class="row">
+                        <label for="card_number">card number</label>
+                        <input type="text" name="card number" id="card_number" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+                    </div>
+                    <div class="row last">
+                        <div class="col">
+                            <label for="month">exp. date</label>
+                            <div class="date-input">
+                                <input type="number" name="month" id="month" placeholder="MM" min="1" max="12" step="1">
+                                <input type="number" name="year" id="year" placeholder="YY" min="23" max="30" step="1">
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <label for="cvc">cvc</label>
+                            <input type="number" name="cvc" id="cvc" placeholder="e.g. 123">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="btn">Confirm</div>
+            </div>
+        </main>
+
+
+        <script src="./script/script.js"></script>
+    </body>
+</html>
